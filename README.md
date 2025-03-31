@@ -1,4 +1,4 @@
-# Coupled Tensor-Tensor Completion (CTTC) for Drug-Target Interaction Prediction
+# Coupled Tensor-Tensor Completion Method (CTTC)
 
 ## Author
 - **Maryam Bagherian**
