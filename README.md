@@ -63,8 +63,6 @@ To access this subset, navigate to the data folder in the repository, where you'
 
 Please note that these files represent a small portion of the full dataset and may not reflect all the variations present in the complete dataset. For access to the full dataset, please refer to the instructions provided in the manuscript [1]. 
 
-## For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
-
 ## Example Usage
 
 ```matlab
@@ -100,7 +98,9 @@ If you use this code in your research or projects, please cite the following pap
   doi = {}
 }
 ```
-For additional works or specific references related to this code, you may also refer to the refrences above. 
+For additional works or specific references related to this code, you may also refer to the refrences above.
+
+For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
 
 
 
