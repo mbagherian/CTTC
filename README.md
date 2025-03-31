@@ -99,9 +99,9 @@ If you use this code in your research or projects, please cite the following pap
   year = {2025},
   doi = {}
 }
-
-For additional works or specific references related to this code, you may also refer to the refrences above. 
 ```
+For additional works or specific references related to this code, you may also refer to the refrences above. 
+
 
 
 
