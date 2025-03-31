@@ -15,7 +15,8 @@ This repository implements the **Coupled Tensor-Tensor Completion (CTTC)** metho
 2. Bagherian, M., et al., "Coupled matrix–matrix and coupled tensor–matrix completion methods for predicting drug–target interactions."  
    Briefings in Bioinformatics 22, no. 2 (2021): 2161-2171, doi: [10.1093/bib/bbaa025](https://doi.org/10.1093/bib/bbaa025).
 3. Bagherian, M., "Tensor denoising via dual Schatten norms." Optimization Letters 18, no. 5 (2024): 1285-1301.
-4. Chen, Yi-Lei, Chiou-Ting Hsu, and Hong-Yuan Mark Liao. "Simultaneous tensor decomposition and completion using factor priors."  
+Some MATLAB commandas have been used from the following refrence: 
+5. Chen, Yi-Lei, Chiou-Ting Hsu, and Hong-Yuan Mark Liao. "Simultaneous tensor decomposition and completion using factor priors."  
    IEEE Transactions on Pattern Analysis and Machine Intelligence 36, no. 3 (2013): 577-591.
 
 ## Code Description
