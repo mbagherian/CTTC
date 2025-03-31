@@ -63,6 +63,24 @@ To access this subset, navigate to the data folder in the repository, where you'
 
 Please note that these files represent a small portion of the full dataset and may not reflect all the variations present in the complete dataset. For access to the full dataset, please refer to the instructions provided in the manuscript [1]. 
 
+## How to Cite
+If you use this code in your research or projects, please cite the following paper:
+
+swift
+Copy
+@article{BagherianCTTC,
+  author = {Maryam Bagherian, Albert Hung, Ivo Dinov, Joshua Welch},
+  title = {Coupled tensor-tensor completion method},
+  journal = {to be added later},
+  volume = {},
+  number = {},
+  pages = {},
+  year = {2025},
+  doi = {}
+}
+For additional works or specific references related to this code, you may also refer to the refrences above. 
+
+
 ## For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
 
 
