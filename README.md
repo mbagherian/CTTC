@@ -14,7 +14,7 @@ This repository implements the **Coupled Tensor-Tensor Completion (CTTC)** metho
 1. Bagherian, M., et al., "Coupled tensor-tensor completion method", under revision. 
 2. Bagherian, M., et al., "Coupled matrix–matrix and coupled tensor–matrix completion methods for predicting drug–target interactions."  
    Briefings in Bioinformatics 22, no. 2 (2021): 2161-2171, doi: [10.1093/bib/bbaa025](https://doi.org/10.1093/bib/bbaa025).
-3. Bagherian, M., "Tensor denoising via dual Schatten norms." Optimization Letters 18, no. 5 (2024): 1285-1301.
+3. Bagherian, M., "Tensor denoising via dual Schatten norms." Optimization Letters 18, no. 5 (2024): 1285-1301, doi: [10.1007/s11590-023-02068-8](https://doi.org/10.1007/s11590-023-02068-8)
    
 Some MATLAB commandas have been used from the following refrence: 
 
