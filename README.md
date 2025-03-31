@@ -45,6 +45,9 @@ This code implements the CTTC method for tensor completion. It includes various 
 - MATLAB (version R2019b or later)
 - Required MATLAB toolboxes (if any) for optimization and matrix operations
 
+## For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
+
+
 ## Example Usage
 
 ```matlab
@@ -67,7 +70,6 @@ m_rate = 0.2;  % Missing data rate
 completed_tensor = CTTC(X, Side, iter, m_rate);
 
 
-## For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
 
 
 
