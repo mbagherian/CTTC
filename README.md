@@ -46,6 +46,17 @@ This code implements the CTTC method for tensor completion. It includes various 
 - MATLAB (version R2019b or later)
 - Required MATLAB toolboxes (if any) for optimization and matrix operations
 
+## Data Subset
+A small subset of the data used in this project is provided in the data folder for ease of access and testing purposes. This subset contains representative samples of the full dataset and can be used to quickly test the code without the need to download the entire dataset.
+
+To access this subset, navigate to the data folder in the repository, where you'll find the following files:
+- cell_sim.mat
+- drug_sim_mat_dense_subset
+- filtered_target_tensor_1_subset
+- gene_sim_mat_normalized_subset
+
+Please note that these files represent a small portion of the full dataset and may not reflect all the variations present in the complete dataset. For access to the full dataset, please refer to the instructions provided in the manuscript [1]. 
+
 ## For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
 
 
