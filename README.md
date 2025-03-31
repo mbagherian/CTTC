@@ -66,16 +66,16 @@ Please note that these files represent a small portion of the full dataset and m
 ## How to Cite
 If you use this code in your research or projects, please cite the following paper:
 ```bibtex
-@article{BagherianCTTC,
-  author = {Maryam Bagherian, Albert Hung, Ivo Dinov, Joshua Welch},
-  title = {Coupled tensor-tensor completion method},
-  journal = {to be added later},
-  volume = {},
-  number = {},
-  pages = {},
-  year = {2025},
-  doi = {}
-}
+         @article{BagherianCTTC,
+           author = {Maryam Bagherian, Albert Hung, Ivo Dinov, Joshua Welch},
+           title = {Coupled tensor-tensor completion method},
+           journal = {to be added later},
+           volume = {},
+           number = {},
+           pages = {},
+           year = {2025},
+           doi = {}
+         }
 For additional works or specific references related to this code, you may also refer to the refrences above. 
 
 
