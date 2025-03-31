@@ -23,11 +23,15 @@ Some MATLAB commandas have been used from the following refrence:
 
 ## Code Description
 
-This code implements the CTTC method for tensor completion. It includes various parameters for scaling, regularization, and iteration settings. The code also handles missing data by randomly selecting a missing rate for tensor completion and applies the CTTC algorithm to predict missing values.
+This code implements the Coupled Tensor-Tensor Completion (CTTC) method for tensor completion. It provides flexible configuration options, including parameters for scaling, regularization, and iteration settings. The code is designed to handle missing data by randomly selecting a missing rate for tensor completion, enabling the prediction of missing values based on available data.
+
+The CTTC algorithm leverages the Coupled Matrix-Matrix Completion (CMMC) function to learn local distance functions for each tensor mode, utilizing the CoupledTensorCompletion function. This process allows the model to adaptively learn the appropriate distance metrics for each mode of the tensor. Additionally, a Mahalanobis distance function is learned through the core tensor, Z, enabling more accurate predictions of missing entries by capturing the underlying relationships in the data.
+
+The algorithm evaluates its performance by comparing the predicted values against the ground truth, allowing for optimization and fine-tuning of the method. The method aims to minimize the reconstruction error, improving the accuracy of the tensor completion and enhancing the model's predictive capabilities.
 
 ### Functionality
 - **CTTC.m**: Main function to perform the Coupled Tensor-Tensor Completion method. It requires the input tensor, side information, and several other parameters.
-- **Supporting Functions**: Additional functions are used for initialization, graph construction, optimization, and more.
+- **Supporting Functions**: Additional functions are used for initialization, metric function construction, optimization, and more.
 
 ### Key Parameters
 - `X`: Initial tensor data (drug-target interaction data).
