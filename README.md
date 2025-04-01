@@ -30,7 +30,7 @@ The algorithm evaluates its performance by comparing the predicted values agains
 
 ### Functionality
 - **CTTC.m**: Main function to perform the Coupled Tensor-Tensor Completion method. It requires the input tensor, side information, and several other parameters.
-- **Supporting Functions**: Additional functions are used for initialization, metric function construction, optimization, and more.
+- **Supporting Functions**: Additional functions are used for initialization, Distance Metric Function construction, optimization, and more.
 
 ### Key Parameters
 - `X`: Initial tensor data (drug-target interaction data).
