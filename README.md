@@ -33,10 +33,10 @@ The algorithm evaluates its performance by comparing the predicted values agains
 - **Supporting Functions**: Additional functions are used for initialization, Distance Metric Function construction, optimization, and more.
 
 ### Key Parameters
-- `X`: Initial tensor data (drug-target interaction data).
-- `Side`: Side information, including drug similarity, gene similarity, and cell similarity matrices.
-- `scale`: Vector of scaling factors.
-- `epsilon`: Vector of regularization parameters.
+- `X`: An m-mode initial tensor data (e.g., cell-drug-target), could be 3D or higher.
+- `Side`: A cell containing m side information tensors, including drug similarity, gene similarity, and cell similarity tensors, specific to this application. 
+- `scale`: Vector of length m containing scaling factors fro each mode. 
+- `epsilon`: Vector of length m as regularization parameters, optimzied depending on the side tensors. 
 - `iter`: Number of iterations for the optimization process.
 - `m_rate`: Missing rate (proportion of missing entries in the tensor).
   
