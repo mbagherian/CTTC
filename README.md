@@ -24,7 +24,7 @@ Some MATLAB commandas have been used from the following refrence:
 
 This code implements the Coupled Tensor-Tensor Completion (CTTC) method for tensor completion. It provides flexible configuration options, including parameters for scaling, regularization, and iteration settings. The code is designed to handle missing data by randomly selecting a missing rate for tensor completion, enabling the prediction of missing values based on available data.
 
-The CTTC algorithm leverages the Coupled Matrix-Matrix Completion (CMMC) function to learn local distance functions for each tensor mode, utilizing the CoupledTensorCompletion function. This process allows the model to adaptively learn the appropriate distance metrics for each mode of the tensor. Additionally, a Mahalanobis distance function is learned through the core tensor, Z, enabling more accurate predictions of missing entries by capturing the underlying relationships in the data.
+The CTTC algorithm generalizes the Coupled Matrix-Matrix Completion (CMMC) and Coupled Tensor-Matrix Completion (CTMC)functions to learn local distance functions for each tensor mode, utilizing the CoupledTensorCompletion function. This process allows the model to adaptively learn the appropriate distance metrics for each mode of the tensor. Additionally, a Mahalanobis distance function is learned through the core tensor, Z, enabling more accurate predictions of missing entries by capturing the underlying relationships in the data.
 
 The algorithm evaluates its performance by comparing the predicted values against the ground truth, allowing for optimization and fine-tuning of the method. The method aims to minimize the reconstruction error, improving the accuracy of the tensor completion and enhancing the model's predictive capabilities.
 
@@ -49,7 +49,8 @@ The algorithm evaluates its performance by comparing the predicted values agains
 ## Requirements
 
 - MATLAB (version R2019b or later)
-- Required MATLAB toolboxes (if any) for optimization and matrix operations
+- Required MATLAB toolboxes: MATLAB tensortoolbox https://www.tensortoolbox.org/ for tensorial operations. One may use MATLAB ADMM 
+   https://www.mathworks.com/help/mpc/ref/admm.html for optimization puprposes as well. 
 
 ## Data Subset
 A small subset of the data used in this project is provided in the data folder for ease of access and testing purposes. This subset contains representative samples of the full dataset and can be used to quickly test the code without the need to download the entire dataset.
@@ -60,7 +61,7 @@ To access this subset, navigate to the data folder in the repository, where you'
 - filtered_target_tensor_1_subset
 - gene_sim_mat_normalized_subset
 
-Please note that these files represent a small portion of the full dataset and may not reflect all the variations present in the complete dataset. For access to the full dataset, please refer to the instructions provided in the manuscript [1]. 
+Please note that these files represent a small portion of the full dataset (due to space limitation) and may not reflect all the variations present in the complete dataset. For more infromation on the full dataset and the side tensors please refer to the instructions provided in the manuscript [1]. 
 
 ## Example Usage
 
