@@ -67,19 +67,19 @@ Please note that these files represent a small portion of the full dataset (due 
 
 ```matlab
 % Load main tensor to be completed
-X = load(("path/to/incomplete_tensor.mat");
+X = load("path/to/incomplete_tensor.mat");
 
 % Load side tensors
-X1 = load("path/to/tensor_1.mat");
-X2 = load("path/to/tensor_2.mat");
-X3 = load("path/to/tensor_3.mat");
+gene_sim_tensor = load("path/to/side_tensor_1.mat");
+drug_sim_tensor = load("path/to/side_tensor_2.mat");
+cell_sim_tensor = load("path/to/side_tensor_3.mat");
 
 % Set parameters
-Side = {gene_sim_matrix, drug_sim_matrix, cell_sim_matrix};  % Example side info
-scale = [09, 0.8, 0.9];  % Scaling factors
-epsilon = [0.1, 0.1, 0.1];  % Regularization parameters
-iter = 50;  % Number of iterations
-m_rate = 0.8;  % Missing data rate
+Side = {gene_sim_tensor, drug_sim_tensor, cell_sim_tensor};  % Example side info
+scale = [09, 0.8, 0.9];  % Scaling factors to be tuned depending on the density and sparisity of side infromation
+epsilon = [0.1, 0.1, 0.1];  % Regularization parameters, to be optimzied by a grid search (or other well-known approaches)
+iter = 50;  % Number of iterations- for this experimernt even 10 iterations suffice. 
+m_rate = 0.8;  % Missing data rate defiens a Boolean/Logical mask for error-evaluation purposes
 
 % Call the CTTC function
 completed_tensor = CTTC(X, Side, iter, m_rate);
