@@ -15,7 +15,7 @@ This repository implements the **Coupled Tensor-Tensor Completion (CTTC)** metho
 2. Bagherian, M., et al., "Coupled matrix–matrix and coupled tensor–matrix completion methods for predicting drug–target interactions." Briefings in Bioinformatics 22, no. 2 (2021): 2161-2171, doi: [10.1093/bib/bbaa025](https://doi.org/10.1093/bib/bbaa025).
 3. Bagherian, M., "Tensor denoising via dual Schatten norms." Optimization Letters 18, no. 5 (2024): 1285-1301, doi: [10.1007/s11590-023-02068-8](https://doi.org/10.1007/s11590-023-02068-8)
    
-Some MATLAB commandas have been used from the following refrence: 
+Some MATLAB updates have been used from the following refrence: 
 
 4. Chen, Yi-Lei, Chiou-Ting Hsu, and Hong-Yuan Mark Liao. "Simultaneous tensor decomposition and completion using factor priors."  
    IEEE Transactions on Pattern Analysis and Machine Intelligence 36, no. 3 (2013): 577-591.
@@ -66,24 +66,28 @@ Please note that these files represent a small portion of the full dataset (due 
 ## Example Usage
 
 ```matlab
-% Load sample data
-X1 = load("path/to/filtered_target_tensor_1.mat");
-X2 = load("path/to/filtered_target_tensor_2.mat");
-X3 = load("path/to/filtered_target_tensor_3.mat");
+% Load main tensor to be completed
+X = load(("path/to/incomplete_tensor.mat");
 
-% Combine tensors
-X = cat(2, X1, X2, X3);
+% Load side tensors
+X1 = load("path/to/tensor_1.mat");
+X2 = load("path/to/tensor_2.mat");
+X3 = load("path/to/tensor_3.mat");
 
 % Set parameters
 Side = {gene_sim_matrix, drug_sim_matrix, cell_sim_matrix};  % Example side info
-scale = [1, 1, 1];  % Scaling factors
+scale = [09, 0.8, 0.9];  % Scaling factors
 epsilon = [0.1, 0.1, 0.1];  % Regularization parameters
 iter = 50;  % Number of iterations
-m_rate = 0.2;  % Missing data rate
+m_rate = 0.8;  % Missing data rate
 
 % Call the CTTC function
 completed_tensor = CTTC(X, Side, iter, m_rate);
-``` 
+```
+
+Based on the size of th einput main tensor and side infromation, the code initializes local distances `V_i` and form the Mahalanobis distance function using the local distances and the core tensor `Z`, from which it calculates the disatnce-metric-learnign based similarities and predicts the missing entries. 
+
+
 ## How to Cite
 If you use this code in your research or projects, please cite the following paper:
 ```bibtex
