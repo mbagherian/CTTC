@@ -104,7 +104,7 @@ If you use this code in your research or projects, please cite the following pap
 ```
 For additional works or specific references related to this code, you may also refer to the refrences above.
 
-For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.deu].
+For questions or issues related to the code, please contact Maryam Bagherian at [maryambagherian@isu.edu].
 
 
 
